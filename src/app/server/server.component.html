@@ -1,2 +1,11 @@
 <h4 [ngStyle]="{backgroundColor: getColor()}"
 [ngClass]="{online: serverStatus === 'online'}">Server with ID {{serverId}} is {{getServerStatus()}}</h4>
+
+<button class="btn btn-warning" (click)="onShowPassword()">Display Details</button>
+
+<p *ngIf="passwordIsShown">Secret password: TUNA</p>
+
+<p *ngFor="let click of clicks; let i = index" [ngStyle]="{backgroundColor: i>=5? 'blue':'transparent'}" 
+[ngClass]="{newColor: i>=5}">{{click}}</p>
+
+
