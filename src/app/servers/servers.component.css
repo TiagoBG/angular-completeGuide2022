@@ -1,0 +1,7 @@
+.servers-container{
+    display: flex;
+    flex-flow: row;
+}
+.server-form{
+    margin: 2rem 3rem;
+}
